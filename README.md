@@ -295,9 +295,11 @@ This project demonstrates practical experience with:
 
 ---
 
-# Repository Documentation
+# Documentation
 
-This repository is organized into dedicated documentation files covering each major technology used in the lab.
+Detailed documentation for each component of the home lab is available in the `docs/` directory.
+
+# Repository Documentation
 
 | Documentation | Description |
 |--------------|-------------|
@@ -336,15 +338,15 @@ This home lab will continue to evolve with additional technologies and security 
 
 Planned improvements include:
 
-- Active Directory Lab
-- Wazuh SIEM
-- Sysmon Logging
-- Splunk Integration
-- Sigma Rules
-- Velociraptor
-- Windows 11 Client
-- Additional vulnerable machines
-- Detection engineering exercises
+- Active Directory domain environment
+- Wazuh SIEM integration
+- Sysmon log collection
+- Splunk integration for centralized logging
+- Sigma rule development
+- Velociraptor endpoint monitoring
+- Windows 11 client deployment
+- Additional vulnerable virtual machines
+- Detection engineering use cases
 - Threat hunting scenarios
 
 ---
@@ -374,8 +376,8 @@ CyberSecurity-Home-Lab/
 
 This repository is intended solely for educational purposes.
 
-All practical exercises, vulnerability testing, packet captures, and exploitation activities were conducted exclusively within an isolated virtual laboratory using personally managed virtual machines and intentionally vulnerable systems.
+All practical exercises, vulnerability assessments, packet captures, and controlled exploitation activities documented in this repository were performed exclusively within an isolated VMware-based home lab using personally managed virtual machines and intentionally vulnerable systems.
 
-No unauthorized testing was performed against production environments, public systems, or third-party infrastructure.
+No unauthorized testing was conducted against production environments, public systems, third-party infrastructure, or organizational assets.
 
-The documentation provided in this repository is intended to demonstrate cybersecurity concepts, laboratory practices, and technical learning in a safe and responsible manner.
+This repository does **not** contain confidential organizational information, internal IP addresses, production logs, proprietary configurations, or sensitive data. All documentation is based on a personal laboratory environment and is intended to demonstrate practical cybersecurity skills and responsible security practices.
