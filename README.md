@@ -12,54 +12,76 @@
 
 ---
 
-# Overview
+# Table of Contents
 
-This repository documents my personal Cybersecurity Home Lab built using VMware Workstation 17 Player. The lab was created to gain practical experience in virtualization, networking, penetration testing, vulnerability assessment, packet analysis, and Windows security within a safe and isolated environment.
-
-Rather than learning security concepts only through theory, I designed this lab to simulate real-world systems where I could perform reconnaissance, network enumeration, vulnerability assessment, controlled exploitation, and traffic analysis using industry-standard cybersecurity tools.
-
-The environment includes Kali Linux as the primary security testing machine, Windows Server 2019 as the Windows target system, and Metasploitable 2 as an intentionally vulnerable Linux machine for hands-on practice.
-
-This repository documents the technologies used, the lab setup, practical exercises performed, lessons learned, and the skills developed while working in the environment.
+- [Overview](#overview)
+- [Key Features](#key-features)
+- [Lab Objectives](#lab-objectives)
+- [Lab Architecture](#lab-architecture)
+- [Virtual Machines](#virtual-machines)
+- [Network Configuration](#network-configuration)
+- [Cybersecurity Tools Used](#cybersecurity-tools-used)
+- [Skills Demonstrated](#skills-demonstrated)
+- [Documentation](#documentation)
+- [Learning Outcomes](#learning-outcomes)
+- [Future Improvements](#future-improvements)
+- [Repository Statistics](#repository-statistics)
+- [Repository Structure](#repository-structure)
+- [Disclaimer](#disclaimer)
 
 ---
 
-# Features
+# Overview
+
+This repository documents my personal CyberSecurity Home Lab built using VMware Workstation 17 Player to develop practical cybersecurity skills in a safe and isolated environment.
+
+The lab simulates a small enterprise environment where I can perform network reconnaissance, service enumeration, vulnerability assessment, controlled exploitation, packet analysis, and Windows administration using industry-standard cybersecurity tools.
+
+The environment consists of:
+
+- Kali Linux (Security Testing Workstation)
+- Windows Server 2019 (Windows Target)
+- Metasploitable 2 (Intentionally Vulnerable Linux Machine)
+
+This repository documents the lab architecture, technologies used, practical exercises performed, lessons learned, and the technical skills developed throughout the project.
+
+---
+
+# Key Features
 
 - VMware-based virtual cybersecurity lab
-- Multiple virtual machines running simultaneously
+- Isolated virtual network for safe testing
 - Windows and Linux environments
 - Network reconnaissance using Nmap
 - Vulnerability validation using Metasploit Framework
-- Network packet analysis using Wireshark
+- Packet analysis using Wireshark
 - Windows Server administration
-- Practical cybersecurity documentation
-- Safe isolated testing environment
+- Technical documentation for each lab component
+- Practical cybersecurity learning environment
 
 ---
 
 # Lab Objectives
 
-The primary goal of this project is to build practical cybersecurity skills through hands-on experience.
+The primary objective of this project is to develop practical cybersecurity skills through hands-on experience in a controlled laboratory environment.
 
-The objectives of this home lab include:
+This home lab was designed to:
 
-- Understand virtualization using VMware Workstation.
-- Build an isolated cybersecurity testing environment.
-- Practice Windows and Linux administration.
-- Learn network reconnaissance techniques.
-- Perform service enumeration.
-- Analyze network traffic using Wireshark.
-- Understand vulnerability assessment concepts.
-- Practice controlled exploitation within an isolated lab.
-- Improve troubleshooting and networking skills.
-- Develop technical documentation skills.
+- Build an isolated cybersecurity testing environment using VMware Workstation 17 Player
+- Gain practical experience with Windows and Linux operating systems
+- Practice network reconnaissance and service enumeration
+- Learn vulnerability assessment methodologies
+- Perform controlled exploitation in a safe environment
+- Capture and analyze network traffic using Wireshark
+- Strengthen networking and troubleshooting skills
+- Improve technical documentation and cybersecurity reporting
+- Develop a strong foundation in offensive and defensive security concepts
 
 ---
 
 # Lab Architecture
 
-The home lab consists of three virtual machines running inside VMware Workstation 17 Player.
+The cybersecurity home lab consists of three virtual machines running within VMware Workstation 17 Player.
 
 ```text
                     Host Computer
@@ -76,7 +98,15 @@ The home lab consists of three virtual machines running inside VMware Workstatio
 +----------------+  +------------------+  +------------------+
 ```
 
-The virtual machines communicate within an isolated network, allowing security testing without impacting external systems. This controlled setup enables safe experimentation with network scanning, service enumeration, packet analysis, and other cybersecurity activities.
+Each virtual machine performs a specific role within the lab:
+
+| Virtual Machine | Role |
+|----------------|------|
+| Kali Linux | Security testing and assessment |
+| Windows Server 2019 | Windows administration and target system |
+| Metasploitable 2 | Intentionally vulnerable Linux target |
+
+The machines communicate through an isolated VMware virtual network, allowing safe experimentation with reconnaissance, enumeration, vulnerability validation, and packet analysis without interacting with production or public systems.
 
 ---
 
@@ -84,9 +114,18 @@ The virtual machines communicate within an isolated network, allowing security t
 
 ## Kali Linux
 
-Kali Linux serves as the primary security testing workstation within the lab. It contains numerous open-source security tools used for reconnaissance, enumeration, penetration testing, and network analysis.
+Kali Linux serves as the primary security testing workstation within the lab.
 
-Examples of tools used include:
+It is used for:
+
+- Network reconnaissance
+- Port scanning
+- Service enumeration
+- Vulnerability assessment
+- Controlled exploitation
+- Packet analysis
+
+Primary tools include:
 
 - Nmap
 - Metasploit Framework
@@ -96,171 +135,81 @@ Examples of tools used include:
 
 ## Windows Server 2019
 
-Windows Server 2019 provides a Windows-based environment for learning system administration and security monitoring. It is used to generate Windows events, understand server configuration, and practice security-related tasks within a controlled environment.
+Windows Server 2019 acts as the Windows target system and administrative environment.
+
+Practical activities included:
+
+- Windows administration
+- Local user management
+- Event Viewer analysis
+- Windows Firewall configuration
+- Network configuration
+- Security monitoring
+
+Working with Windows Server provided practical experience with enterprise Windows administration and security concepts.
 
 ---
 
 ## Metasploitable 2
 
-Metasploitable 2 is an intentionally vulnerable Linux virtual machine designed for cybersecurity education. It contains multiple vulnerable services that can be safely analyzed and tested inside the isolated lab.
+Metasploitable 2 is an intentionally vulnerable Linux virtual machine developed for cybersecurity education.
 
-It is used only within this personal laboratory environment for educational purposes.
+Within this lab it was used to practice:
+
+- Host discovery
+- Port scanning
+- Service enumeration
+- Vulnerability identification
+- Controlled exploitation
+- Security research
+
+All activities were performed exclusively within the isolated laboratory environment.
 
 ---
+
 # Network Configuration
 
-The virtual machines are connected through VMware Workstation 17 Player, creating an isolated virtual network for security testing and experimentation. This configuration allows communication between the virtual machines while preventing unintended interaction with external production systems.
+All virtual machines are connected through VMware Workstation 17 Player using an isolated virtual network.
 
-The lab network supports:
+This configuration enables:
 
-- Communication between Kali Linux and target systems
+- Secure communication between virtual machines
 - Network reconnaissance
 - Service enumeration
 - Packet capture and analysis
-- Controlled security testing
+- Controlled vulnerability testing
 
-The isolated nature of the environment provides a safe platform for learning offensive and defensive cybersecurity concepts.
+The isolated network ensures that all testing remains confined to the home lab, preventing interaction with production environments or external systems.
 
 ---
 
 # Cybersecurity Tools Used
 
-The following tools were used throughout this home lab.
+The following technologies and tools were used throughout this home lab to build, manage, and assess the environment.
 
-| Tool | Purpose |
-|------|---------|
-| VMware Workstation 17 Player | Virtualization Platform |
-| Kali Linux | Security Testing Operating System |
-| Windows Server 2019 | Windows Target Environment |
-| Metasploitable 2 | Vulnerable Linux Machine |
-| Nmap | Network Discovery & Port Scanning |
-| Metasploit Framework | Exploitation Framework |
-| Wireshark | Network Packet Analysis |
-
----
-
-# VMware Workstation
-
-VMware Workstation 17 Player is used as the virtualization platform for hosting multiple operating systems simultaneously. It provides an isolated environment where cybersecurity experiments can be performed safely without affecting the host operating system.
-
-Key benefits include:
-
-- Virtual machine isolation
-- Snapshot support (where available)
-- Custom networking
-- Resource allocation
-- Safe testing environment
-
----
-
-# Kali Linux
-
-Kali Linux serves as the attack machine within the laboratory environment.
-
-It contains numerous open-source cybersecurity tools used for:
-
-- Network reconnaissance
-- Enumeration
-- Vulnerability assessment
-- Security testing
-- Packet analysis
-
-Using Kali Linux allowed me to gain practical experience with widely used penetration testing and network analysis tools.
-
----
-
-# Windows Server 2019
-
-Windows Server 2019 was configured as the Windows target environment.
-
-The server was used to understand:
-
-- Windows administration
-- Event Viewer
-- User management
-- Windows Firewall
-- Network configuration
-- Windows security concepts
-
-Working with Windows Server provided valuable experience with enterprise operating system administration and security.
-
----
-
-# Metasploitable 2
-
-Metasploitable 2 is an intentionally vulnerable Linux virtual machine developed for cybersecurity education.
-
-It provides numerous vulnerable services that enable students and security professionals to safely practice:
-
-- Enumeration
-- Vulnerability identification
-- Controlled exploitation
-- Service analysis
-- Security research
-
-All testing was performed exclusively within the isolated laboratory environment.
-
----
-
-# Nmap
-
-Nmap was used as the primary reconnaissance tool throughout the lab.
-
-Activities performed included:
-
-- Host discovery
-- Port scanning
-- Service version detection
-- Operating system detection
-- Network enumeration
-
-These activities improved my understanding of network visibility and attack surface identification.
-
----
-
-# Metasploit Framework
-
-Metasploit Framework was used for controlled exploitation within the isolated lab environment.
-
-Practical exercises included:
-
-- Module discovery
-- Exploit selection
-- Payload configuration
-- Session management
-- Post-exploitation exploration
-
-Using Metasploit improved my understanding of exploit workflows and vulnerability validation.
-
----
-
-# Wireshark
-
-Wireshark was used to capture and analyze network traffic generated during laboratory exercises.
-
-Protocols analyzed included:
-
-- TCP
-- UDP
-- DNS
-- HTTP
-- ICMP
-- ARP
-
-Packet analysis helped me better understand network communication and protocol behavior.
+| Tool | Category | Purpose |
+|------|----------|---------|
+| VMware Workstation 17 Player | Virtualization | Hosts and manages the virtual lab environment |
+| Kali Linux | Operating System | Security testing and penetration testing platform |
+| Windows Server 2019 | Operating System | Windows administration and target environment |
+| Metasploitable 2 | Vulnerable Machine | Intentionally vulnerable Linux system for security practice |
+| Nmap | Network Reconnaissance | Host discovery, port scanning, and service enumeration |
+| Metasploit Framework | Exploitation Framework | Controlled vulnerability validation and exploitation |
+| Wireshark | Network Analysis | Packet capture and protocol analysis |
 
 ---
 
 # Skills Demonstrated
 
-This project demonstrates practical experience with:
+This project demonstrates practical knowledge across multiple cybersecurity domains.
 
 ## Virtualization
 
 - VMware Workstation 17 Player
 - Virtual machine deployment
-- Virtual networking
+- Virtual hardware configuration
 - Resource allocation
+- Virtual networking
 
 ## Operating Systems
 
@@ -271,83 +220,97 @@ This project demonstrates practical experience with:
 
 ## Networking
 
-- TCP/IP
-- Network troubleshooting
+- TCP/IP fundamentals
 - Port scanning
 - Service enumeration
-- Network communication
+- Network troubleshooting
+- Packet analysis
+- Virtual network configuration
 
 ## Cybersecurity
 
 - Network reconnaissance
 - Vulnerability assessment
 - Controlled exploitation
-- Packet analysis
+- Traffic analysis
 - Security documentation
+- Home lab design
 
 ## Professional Skills
 
 - Technical documentation
-- Cybersecurity lab design
 - Problem solving
 - Research
 - Continuous learning
+- Hands-on laboratory practice
 
 ---
 
 # Documentation
 
-Detailed documentation for each component of the home lab is available in the `docs/` directory.
+Comprehensive documentation for each component of the home lab is available in the **docs/** directory.
 
-# Repository Documentation
-
-| Documentation | Description |
-|--------------|-------------|
-| vmware.md | VMware installation, configuration and virtualization concepts |
-| networking.md | Virtual networking concepts and lab connectivity |
-| kali-linux.md | Kali Linux setup and security tools |
-| windows-server.md | Windows Server configuration and administration |
-| metasploitable-2.md | Vulnerable machine overview and purpose |
-| nmap.md | Network discovery and scanning techniques |
-| metasploit.md | Metasploit Framework usage and workflow |
-| wireshark.md | Packet capture and traffic analysis |
+| Document | Description |
+|----------|-------------|
+| vmware.md | VMware installation, virtual machine configuration, and virtualization concepts |
+| networking.md | Virtual networking concepts, adapters, and lab connectivity |
+| kali-linux.md | Kali Linux installation, configuration, and security tools |
+| windows-server.md | Windows Server installation, administration, and configuration |
+| metasploitable-2.md | Purpose, setup, and role of the vulnerable Linux machine |
+| nmap.md | Network discovery, port scanning, and enumeration techniques |
+| metasploit.md | Metasploit Framework workflow and controlled exploitation concepts |
+| wireshark.md | Packet capture, protocol analysis, and traffic inspection |
 
 ---
 
 # Learning Outcomes
 
-Through building this cybersecurity home lab, I gained practical experience in:
+Building this cybersecurity home lab strengthened both my technical knowledge and practical skills.
 
-- Virtual machine deployment
-- Windows Server administration
-- Linux administration
-- Network reconnaissance
-- Port and service enumeration
-- Packet capture and protocol analysis
-- Controlled exploitation concepts
-- Technical documentation
-- Cybersecurity lab management
+Key learning outcomes include:
 
-More importantly, this project strengthened my understanding of how different cybersecurity tools work together within a realistic laboratory environment.
+- Designing and managing an isolated virtual cybersecurity environment
+- Deploying and configuring multiple operating systems
+- Understanding virtual networking concepts
+- Performing network reconnaissance and service enumeration
+- Conducting vulnerability assessments in a controlled environment
+- Capturing and analyzing network traffic
+- Understanding exploitation workflows using Metasploit Framework
+- Developing professional technical documentation
+- Applying cybersecurity concepts through hands-on practice
+
+This project reinforced the importance of practical experience in understanding how cybersecurity tools and techniques work together within a realistic laboratory environment.
 
 ---
 
 # Future Improvements
 
-This home lab will continue to evolve with additional technologies and security tools.
+This home lab will continue to evolve as I expand my cybersecurity knowledge and practical experience.
 
-Planned improvements include:
+Planned enhancements include:
 
 - Active Directory domain environment
-- Wazuh SIEM integration
+- Windows 11 client deployment
 - Sysmon log collection
-- Splunk integration for centralized logging
+- Splunk integration for centralized log analysis
+- Wazuh SIEM deployment
 - Sigma rule development
 - Velociraptor endpoint monitoring
-- Windows 11 client deployment
-- Additional vulnerable virtual machines
 - Detection engineering use cases
 - Threat hunting scenarios
+- Additional vulnerable virtual machines
+
+---
+
+# Repository Statistics
+
+| Metric | Value |
+|---------|------:|
+| Virtual Machines | 3 |
+| Operating Systems | 3 |
+| Cybersecurity Tools | 4 |
+| Documentation Files | 8 |
+| Virtualization Platform | VMware Workstation 17 Player |
 
 ---
 
@@ -359,12 +322,12 @@ CyberSecurity-Home-Lab/
 ├── README.md
 ├── LICENSE
 │
-└── docs
+└── docs/
     ├── vmware.md
+    ├── networking.md
     ├── kali-linux.md
     ├── windows-server.md
     ├── metasploitable-2.md
-    ├── networking.md
     ├── nmap.md
     ├── metasploit.md
     └── wireshark.md
@@ -372,12 +335,54 @@ CyberSecurity-Home-Lab/
 
 ---
 
+# Technologies
+
+- VMware Workstation 17 Player
+- Kali Linux
+- Windows Server 2019
+- Metasploitable 2
+- Nmap
+- Metasploit Framework
+- Wireshark
+
+---
+
+# Repository Goals
+
+This repository was created to:
+
+- Document the design and implementation of a personal cybersecurity home lab.
+- Demonstrate practical cybersecurity skills through hands-on learning.
+- Showcase technical documentation and laboratory management.
+- Build a portfolio that reflects continuous learning and practical experience.
+- Serve as a foundation for future cybersecurity projects and advanced lab environments.
+
+---
+
 # Disclaimer
 
-This repository is intended solely for educational purposes.
+This repository is intended solely for educational and portfolio purposes.
 
-All practical exercises, vulnerability assessments, packet captures, and controlled exploitation activities documented in this repository were performed exclusively within an isolated VMware-based home lab using personally managed virtual machines and intentionally vulnerable systems.
+All practical exercises, vulnerability assessments, packet captures, reconnaissance, and controlled exploitation activities documented in this repository were performed exclusively within an isolated VMware-based home lab using personally managed virtual machines and intentionally vulnerable systems.
 
 No unauthorized testing was conducted against production environments, public systems, third-party infrastructure, or organizational assets.
 
-This repository does **not** contain confidential organizational information, internal IP addresses, production logs, proprietary configurations, or sensitive data. All documentation is based on a personal laboratory environment and is intended to demonstrate practical cybersecurity skills and responsible security practices.
+This repository does **not** contain:
+
+- Production logs
+- Internal IP addresses
+- Organizational assets
+- Client information
+- Confidential data
+- Proprietary configurations
+- Vulnerability assessment reports from production environments
+
+All examples, configurations, and documentation are based on a personal laboratory environment and are intended to demonstrate practical cybersecurity knowledge, responsible security practices, and continuous learning.
+
+---
+
+# License
+
+This project is licensed under the **MIT License**.
+
+See the **LICENSE** file for details.
